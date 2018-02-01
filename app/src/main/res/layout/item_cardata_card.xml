@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="false"
+    app:cardMaxElevation="3dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/lblVin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIN: "
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtVin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fhjkfdhkjla54564"
+            android:layout_toRightOf="@+id/lblVin" />
+
+        <View
+            android:id="@+id/div1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/txtVin"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/lblFuelLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Level: "
+            android:layout_below="@+id/div1"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtFuelLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fhjkfdhkjla54564"
+            android:layout_toRightOf="@+id/lblFuelLevel"
+            android:layout_below="@+id/div1"/>
+
+        <View
+            android:id="@+id/div2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/txtFuelLevel"
+            android:layout_margin="5dp" />
+
+
+        <TextView
+            android:id="@+id/lblRpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RPM: "
+            android:layout_below="@+id/div2"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtRpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fhjkfdhkjla54564"
+            android:layout_toRightOf="@+id/lblRpm"
+            android:layout_below="@+id/div2"/>
+
+        <View
+            android:id="@+id/div3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/txtRpm"
+            android:layout_margin="5dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/lblSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed: "
+            android:layout_below="@+id/div3"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fhjkfdhkjla54564"
+            android:layout_toRightOf="@+id/lblSpeed"
+            android:layout_below="@+id/div3"/>
+
+        <View
+            android:id="@+id/div4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/txtSpeed"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/lblPrndl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRNDL: "
+            android:layout_below="@+id/div4"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtPrndl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fhjkfdhkjla54564"
+            android:layout_toRightOf="@+id/lblPrndl"
+            android:layout_below="@+id/div4"/>
+
+        <View
+            android:id="@+id/div5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/txtPrndl"
+            android:layout_margin="5dp"
+            />
+
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:materialIcon="arrow_right"
+            app:materialIconColor="#000"
+            app:materialIconSize="24dp"
+            android:scaleType="center"
+            android:id="@+id/icon"
+            android:layout_below="@+id/div5"
+            android:layout_alignParentEnd="true"
+        />
+
+
+
+
+        <TextView
+            android:id="@+id/txtMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_black_1000"
+            android:textSize="10sp"
+            android:text="@string/more_info"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/icon"
+            android:layout_below="@+id/div5"/>
+
+
+        <TextView
+            android:id="@+id/txtDt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="10sp"
+            android:text="99/99/9999"
+            android:layout_below="@id/div5"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

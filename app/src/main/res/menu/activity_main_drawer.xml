@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_average_consumption"
+
+            android:title="Average Consumption" />
+        <item
+            android:id="@+id/nav_time_traveled"
+
+            android:title="Time Traveled" />
+
+        <item
+            android:id="@+id/nav_average_rpm"
+            android:title="Average RPM" />
+
+        <item
+            android:id="@+id/nav_duration"
+            android:title="Duration" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Info" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_black_24dp"
+                android:title="Exit" />
+
+            <item
+                android:id="@+id/nav_avaliate"
+                android:title="Avaliate" />
+
+            <item
+                android:id="@+id/nav_terms_of_use"
+                android:title="Terms of User" />
+
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="Privacy Policy" />
+        </menu>
+    </item>
+
+</menu>

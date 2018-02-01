@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.module.ford.smarthealthcar.ItemDetailAct"
+    tools:showIn="@layout/activity_item_detail">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp"
+                android:text="99/99/9999"/>
+
+
+            <LinearLayout
+                android:id="@+id/llInfo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/txtDt"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txtVin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VIN: "/>
+
+                <TextView
+                    android:id="@+id/txtPrndl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="PRNDL: "/>
+
+                <TextView
+                    android:id="@+id/txtSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Speed: "/>
+
+                <TextView
+                    android:id="@+id/txtRpm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="RPM: "/>
+
+                <TextView
+                    android:id="@+id/txtFuelLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Fuel Level: "/>
+
+                <TextView
+                    android:id="@+id/txtFuelLevel_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Fuel Level State: "/>
+
+                <TextView
+                    android:id="@+id/txtOdometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Odometro: "/>
+
+                <TextView
+                    android:id="@+id/txtExternalTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Ext. Temp: "/>
+
+                <TextView
+                    android:id="@+id/txtDriverBreaking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Driver Breaking: "/>
+
+
+                <TextView
+                    android:id="@+id/txtEngineTorque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eng. Torque: "/>
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/llInfo1"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtGps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div2"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="GPS"/>
+
+            <LinearLayout
+                android:id="@+id/llInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_below="@id/txtGps">
+
+                <TextView
+                    android:id="@+id/txtLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Latitude: "/>
+
+                <TextView
+                    android:id="@+id/txtLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Longitude: "/>
+
+                <TextView
+                    android:id="@+id/txtAltitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Altitude: "/>
+                <TextView
+                    android:id="@+id/txtHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heading: "/>
+
+                <TextView
+                    android:id="@+id/txtCompassDirection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Compass Direction: "/>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/div3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/llInfo2"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtHeadLampStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div3"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Head Lamp Status"/>
+
+            <LinearLayout
+                android:id="@+id/llInfo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_below="@id/txtHeadLampStatus">
+
+                <TextView
+                    android:id="@+id/txtLowBeamsOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low Beams On: "/>
+
+                <TextView
+                    android:id="@+id/txtHighBeamsOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High Beams On: "/>
+
+                <TextView
+                    android:id="@+id/txtAmbientLightSensorStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amb. Light Sensor Status: "/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/div4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/llInfo3"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtTirePressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div4"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Tire Pressure"/>
+
+            <LinearLayout
+                android:id="@+id/llInfo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_below="@id/txtTirePressure">
+
+                <TextView
+                    android:id="@+id/txtRightRear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Right Rear: "/>
+
+                <TextView
+                    android:id="@+id/txtLeftRear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Left Rear: "/>
+
+                <TextView
+                    android:id="@+id/txtRightFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Right Front: "/>
+
+                <TextView
+                    android:id="@+id/txtLeftFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Left Front: "/>
+
+                <TextView
+                    android:id="@+id/txtInnerRightRear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inner Right Rear: "
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtInnerLeftRear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inner Left Rear: "
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtPressureTelltale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure Telltale: "
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/div5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/llInfo4"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                android:id="@+id/txtBodyInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Body Information"/>
+
+            <LinearLayout
+                android:id="@+id/llInfo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_below="@id/txtBodyInformation">
+
+                <TextView
+                    android:id="@+id/txtDriverDoorAjar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Door: "/>
+
+                <TextView
+                    android:id="@+id/txtPassengerDoorAjar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Passenger Door: "/>
+
+                <TextView
+                    android:id="@+id/txtRearRightDoorAjar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rear Right Door: "/>
+
+                <TextView
+                    android:id="@+id/txtRearLeftDoorAjar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rear Left Door: "/>
+
+
+
+                <TextView
+                    android:id="@+id/txtIgnitionStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ignition Status: "/>
+
+                <TextView
+                    android:id="@+id/txtIgnitionStableStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ignition Stable Status: "
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtParkBreakeActive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Park Breake Active: "/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
