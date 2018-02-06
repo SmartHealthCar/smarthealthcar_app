@@ -30,7 +30,7 @@ public class CarData implements Serializable{
     private String fuelLevel = " -- ";
     private String speed = " -- ";
     private String externalTemperature = " -- ";
-    private String rpm = " -- ";
+    private String rpm = "0";
     private String engineTorque = " -- ";
     private String odometer = " -- ";
     private String driverBraking = " -- ";

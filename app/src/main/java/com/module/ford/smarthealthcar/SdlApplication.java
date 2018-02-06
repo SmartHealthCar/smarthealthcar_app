@@ -447,7 +447,7 @@ public class SdlApplication extends com.ford.sa.interfacesdl.SdlApplication {
             Config.ConnectionType = ServiceListeners.ProxyConnection.SYNC;
             //for connection with MANTICORE
             //Config.ConnectionType = ServiceListeners.ProxyConnection.MANTICORE;
-            Config.ManticorePort = 8888;
+            Config.ManticorePort = 5356;
 
             initSdlService();
 

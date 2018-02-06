@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CampusPartyExample</string>
+    <string name="app_name">SmartHealthCar</string>
     <string name="action_clear">Erase Data</string>
     <string name="title_activity_detail_info">DetailInfoAct</string>
     <string name="title_activity_item_detail">ItemDetailAct</string>
@@ -8,5 +8,5 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="title_activity_main">teste</string>
+    <string name="title_activity_main">SmartHealthCar</string>
 </resources>

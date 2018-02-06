@@ -1,11 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.module.ford.smarthealthcar.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:background="#e5e5e5">
 
-</android.support.constraint.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <com.jjoe64.graphview.GraphView
+                            android:layout_marginTop="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dip"
+                            android:background="#FFF"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/graph" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="3dp"
+                            android:weightSum="3">
+
+                                <RelativeLayout
+                                    android:layout_margin="3dp"
+                                    android:background="#fff"
+                                    android:layout_weight="1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp">
+                                        <ImageView
+                                            android:layout_marginTop="20dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/fuel_dispenser"/>
+
+                                        <TextView
+                                            android:id="@+id/fuel_consumption_text_view"
+                                            android:layout_centerInParent="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1354"
+                                            android:textColor="#e0c128"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_centerHorizontal="true"/>
+
+                                        <Button
+                                            android:id="@+id/button_fuel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="10dp"
+                                            android:text="Fuel"
+                                            android:background="@drawable/bg_list_button"
+                                            />
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_margin="3dp"                                android:background="#fff"
+                                    android:layout_weight="1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp">
+                                        <ImageView
+                                            android:layout_marginTop="20dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/distance"/>
+
+                                        <TextView
+                                            android:id="@+id/distance_text_view"
+                                            android:layout_centerInParent="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="254"
+                                            android:textColor="#25aa58"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_centerHorizontal="true"/>
+
+
+                                        <Button
+                                            android:id="@+id/button_distance"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="10dp"
+                                            android:text="Distance"
+                                            android:background="@drawable/bg_list_button"
+                                            />
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_margin="3dp"                               android:background="#fff"
+                                    android:layout_weight="1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp">
+                                        <ImageView
+                                            android:layout_marginTop="20dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/speedometer"/>
+
+                                        <TextView
+                                            android:id="@+id/rpm_text_view"
+                                            android:layout_centerInParent="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="564590"
+                                            android:textColor="#fc2d2d"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:layout_centerHorizontal="true"/>
+
+                                        <Button
+                                            android:id="@+id/button_rpm"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_margin="10dp"
+                                            android:text="RPM"
+                                            android:background="@drawable/bg_list_button"
+                                            >
+
+                                        </Button>
+
+                                </RelativeLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:visibility="gone"
+                            android:id="@+id/stop_cycle_button"
+                            android:text="end cycle"
+                            android:textColor="#fff"
+                            android:background="#e02828"
+                            android:layout_marginTop="40dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+
+                </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>
